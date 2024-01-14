@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="חישוב אחוזים במחשבון מהיר ופשוט, מעולה לביצוע תרגילים, חישוב ריביות ודמי ניהול ועוד. מהיר ומדויק.">
+
+    <title>מחשבון אחוזים שימוש וחינמי</title>
+
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-content">
+        <div class="container">
+                <img src="../assets/images/logo1.png" alt="Percentify Logo" class="header-logo">
+
+            <p>מחשבון אחוזים פשוט לשימוש</p>
+
+            <!-- Percentage of a Total -->
+            <div>
+                <label for="percentOfTotal">כמה זה </label>
+                <input type="number" id="percentOfTotal" placeholder="אחוז">
+                <label for="totalForPercentage">% מתוך </label>
+                <input type="number" id="totalForPercentage" placeholder="מספר">
+                <button onclick="calculatePercentageOfTotal()">חישוב</button>
+                <p id="resultPercentageOfTotal"></p>
+            </div>
+
+            <!-- Amount as a Percentage of Total -->
+            <div>
+                <label for="amount">איזה אחוז זה </label>
+                <input type="number" id="amount" placeholder="מספר">
+                <label for="totalAmount">מתוך </label>
+                <input type="number" id="totalAmount" placeholder="מספר">
+                <button onclick="calculateAmountAsPercentage()">חישוב</button>
+                <p id="resultAmountAsPercentage"></p>
+            </div>
+
+            <!-- Finding the Total from a Percentage -->
+            <div>
+                <label for="partialAmount">אם </label>
+                <input type="number" id="partialAmount" placeholder="מספר">
+                <label for="percentageOfTotal">= </label>
+                <input type="number" id="percentageOfTotal" placeholder="אחוז">
+                <label>%, כמה זה 100%?</label>
+                <button onclick="calculateTotalFromPercentage()">חישוב</button>
+                <p id="resultTotalFromPercentage"></p>
+            </div>
+            <div><p class="instructions"><strong>טיפ:</strong> לחצו Tab כדי לעבור לשדה הבא, או Shift+Tab בשביל לחזור לשדה הקודם. לחצו על Enter כדי לחשב את התוצאה.</p></div>
+    <div class="about-section">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7451519960875975"
+     crossorigin="anonymous"></script>
+        <!-- test1 -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-7451519960875975"
+             data-ad-slot="4371722752"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <h2>אודות</h2>
+        <p>Percentify הוא כלי אונליין חינמי שמפשט עבורכם חישוב אחוזים. ניתן להשתמש לצורך חישוב דמי ניהול, טיפ ועוד. שימוש מהנה ומועיל!</p>
+    </div>
+
+    <script src="../scripts/percentage-calculator-heb.js"></script>
+</body>
+
+<footer>
+    <p>2024 &copy; Percentify</p>
+    <a href="../privacy/">הסכם פרטיות</a>&nbsp &nbsp &nbsp
+    <a href="/">English</a>
+    <!-- <a href="blog/">Blog</a> --> <!-- not needed for now -->
+</footer>
