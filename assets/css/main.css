@@ -114,3 +114,9 @@ footer a {
     margin-left: auto;
     margin-right: auto;
 }
+
+.instructions {
+    color: #333; /* Or any color you prefer */
+    font-size: 0.9em; /* Adjust size as needed */
+    margin-top: 10px; /* Spacing from the element above */
+}
