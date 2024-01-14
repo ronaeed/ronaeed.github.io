@@ -106,3 +106,8 @@ footer a {
     box-shadow: 0 4px 8px rgba(0, 0
 , 0, 0.1);
 }
+
+.header-logo {
+    height: 45px; /* Adjust the logo size as needed */
+    width: auto; /* Maintain the aspect ratio */
+}
