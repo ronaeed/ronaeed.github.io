@@ -146,13 +146,6 @@ footer a {
     margin-bottom: 20px; /* Space below the title */
 }
 
-.faq-item {
-    margin-bottom: 15px; /* Space between each FAQ item */
-    padding: 10px;
-    background-color: #fff; /* White background for each item */
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Optional shadow for each item */
-}
 
 .faq-item h3 {
     color: #0a58ca; /* Color for question */
