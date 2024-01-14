@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f8;
@@ -89,4 +89,21 @@ p.result {
     color: #333;
     font-size: 1em;
     line-height: 1.6;
+}
+
+footer a {
+    color: black;           /* Set link color to black */
+    text-decoration: none;  /* Remove underline */
+    font-weight: bold;      /* Make text bold */
+    font-size: 0.9em;       /* Make text a bit smaller */
+}
+
+.content-wrapper {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px; /* Adjust the width as needed */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0
+, 0, 0.1);
 }
