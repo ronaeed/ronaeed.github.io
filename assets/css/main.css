@@ -131,3 +131,35 @@ footer a {
 .whatsapp-share-button:hover {
     color: #128C7E;
 }
+.faq-section {
+    max-width: 800px; /* Adjust width as needed */
+    margin: 0 auto; /* Center the section */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for the section */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.faq-section h2 {
+    text-align: center; /* Center-align the section title */
+    color: #333; /* Dark color for the title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.faq-item {
+    margin-bottom: 15px; /* Space between each FAQ item */
+    padding: 10px;
+    background-color: #fff; /* White background for each item */
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Optional shadow for each item */
+}
+
+.faq-item h3 {
+    color: #0a58ca; /* Color for question */
+    margin-bottom: 10px; /* Space below the question */
+}
+
+.faq-item p {
+    color: #333; /* Dark color for the answer */
+    line-height: 1.6; /* Line height for better readability */
+}
