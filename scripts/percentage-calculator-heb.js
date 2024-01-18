@@ -1,12 +1,23 @@
 function formatNumberInput(event) {
-    // Allow only digits and commas
     let value = event.target.value;
-    value = value.replace(/[^0-9,]/g, '');
 
-    // Remove all commas and reformat
-    value = value.replace(/,/g, '');
-    if (!isNaN(value) && value.length > 0) {
-        value = parseFloat(value).toLocaleString();
+    // Allow only digits, commas, and a dot
+    value = value.replace(/[^0-9,.]/g, '');
+
+    // Split the value into whole and decimal parts
+    let parts = value.split('.');
+    let wholePart = parts[0].replace(/,/g, '');
+    let decimalPart = parts[1];
+
+    // Format the whole part with commas
+    if (!isNaN(wholePart) && wholePart.length > 0) {
+        wholePart = parseInt(wholePart).toLocaleString();
+    }
+
+    // Reassemble the value
+    value = wholePart;
+    if (decimalPart !== undefined) {
+        value += '.' + decimalPart;
     }
 
     event.target.value = value;
