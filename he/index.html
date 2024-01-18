@@ -107,10 +107,10 @@
 
             <!-- Percentage of a Total -->
             <div>
-                <label for="percentOfTotal">כמה זה </label>
-                <input type="number" id="percentOfTotal" placeholder="אחוז">
-                <label for="totalForPercentage">% מתוך </label>
-                <input type="number" id="totalForPercentage" placeholder="סכום">
+                <label for="percentOfTotal">כמה זה %</label>
+                <input type="text" id="percentOfTotal" placeholder="אחוז">
+                <label for="totalForPercentage">מתוך </label>
+                <input type="text" id="totalForPercentage" placeholder="סכום">
                 <button onclick="calculatePercentageOfTotal()">חישוב</button>
                 <p id="resultPercentageOfTotal"></p>
             </div>
@@ -118,9 +118,9 @@
             <!-- Amount as a Percentage of Total -->
             <div>
                 <label for="amount">איזה אחוז זה </label>
-                <input type="number" id="amount" placeholder="סכום">
+                <input type="text" id="amount" placeholder="סכום">
                 <label for="totalAmount">מתוך </label>
-                <input type="number" id="totalAmount" placeholder="סכום">
+                <input type="text" id="totalAmount" placeholder="סכום">
                 <button onclick="calculateAmountAsPercentage()">חישוב</button>
                 <p id="resultAmountAsPercentage"></p>
             </div>
@@ -128,10 +128,10 @@
             <!-- Finding the Total from a Percentage -->
             <div>
                 <label for="partialAmount">אם </label>
-                <input type="number" id="partialAmount" placeholder="סכום">
-                <label for="percentageOfTotal">= </label>
-                <input type="number" id="percentageOfTotal" placeholder="אחוז">
-                <label>%, כמה זה 100%?</label>
+                <input type="text" id="partialAmount" placeholder="סכום">
+                <label for="percentageOfTotal">= %</label>
+                <input type="text" id="percentageOfTotal" placeholder="אחוז">
+                <label>, כמה זה 100%?</label>
                 <button onclick="calculateTotalFromPercentage()">חישוב</button>
                 <p id="resultTotalFromPercentage"></p>
             </div>

@@ -32,11 +32,11 @@ div {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-label, input[type="number"], button {
+label, input[type="text"], button {
     font-size: 0.9em;
 }
 
-input[type="number"], button {
+input[type="text"], button {
     width: auto;
     padding: 8px 12px;
     margin-top: 10px;
@@ -46,7 +46,7 @@ input[type="number"], button {
     display: inline-block;
 }
 
-input[type="number"] {
+input[type="text"] {
     background-color: #f8f9fa;
 }
 
