@@ -146,7 +146,6 @@ footer a {
     margin-bottom: 20px; /* Space below the title */
 }
 
-
 .faq-item h3 {
     color: #0a58ca; /* Color for question */
     margin-bottom: 10px; /* Space below the question */
@@ -156,3 +155,87 @@ footer a {
     color: #333; /* Dark color for the answer */
     line-height: 1.6; /* Line height for better readability */
 }
+
+/*
+/* Navbar Styles
+.navbar {
+    background-color: #333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-list li {
+    position: relative;
+}
+
+.nav-list li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-list li a:hover {
+    background-color: #111;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Sub Dropdown Styles
+.sub-dropdown {
+    position: relative;
+}
+
+.sub-dropdown-content {
+    display: none;
+    position: absolute;
+    left: 100%; /* Position to the right of the parent item
+    top: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.sub-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.sub-dropdown:hover .sub-dropdown-content {
+    display: block;
+}
+
+/* Adjustments for RTL
+/* You might need to adjust the positioning for RTL layout
+.sub-dropdown-content {
+    left: auto; /* Reset left position
+    right: 100%; /* Position to the left for RTL
+}
+*/
