@@ -95,9 +95,9 @@
             <!-- Percentage of a Total -->
             <div>
                 <label for="percentOfTotal">What is </label>
-                <input type="text" id="percentOfTotal" placeholder="Percentage">
+                <input type="text" id="percentOfTotal" placeholder="Percentage" inputmode="decimal">
                 <label for="totalForPercentage">% of </label>
-                <input type="text" id="totalForPercentage" placeholder="Total Amount">
+                <input type="text" id="totalForPercentage" placeholder="Total Amount" inputmode="decimal">
                 <button onclick="calculatePercentageOfTotal()">Calculate</button>
                 <p id="resultPercentageOfTotal"></p>
             </div>
@@ -105,9 +105,9 @@
             <!-- Amount as a Percentage of Total -->
             <div>
                 <label for="amount">What percentage is </label>
-                <input type="text" id="amount" placeholder="Amount">
+                <input type="text" id="amount" placeholder="Amount" inputmode="decimal">
                 <label for="totalAmount">out of </label>
-                <input type="text" id="totalAmount" placeholder="Total Amount">
+                <input type="text" id="totalAmount" placeholder="Total Amount" inputmode="decimal">
                 <button onclick="calculateAmountAsPercentage()">Calculate</button>
                 <p id="resultAmountAsPercentage"></p>
             </div>
@@ -115,9 +115,9 @@
             <!-- Finding the Total from a Percentage -->
             <div>
                 <label for="partialAmount">If </label>
-                <input type="text" id="partialAmount" placeholder="Amount">
+                <input type="text" id="partialAmount" placeholder="Amount" inputmode="decimal">
                 <label for="percentageOfTotal">equals </label>
-                <input type="text" id="percentageOfTotal" placeholder="Percentage">
+                <input type="text" id="percentageOfTotal" placeholder="Percentage" inputmode="decimal">
                 <label>%, what is 100%?</label>
                 <button onclick="calculateTotalFromPercentage()">Calculate</button>
                 <p id="resultTotalFromPercentage"></p>
