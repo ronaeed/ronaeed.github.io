@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>מחשבון תשואה | חישוב רווחים מהשקעות בקלות</title>
+	<meta name="keywords" content="מחשבון ריבית דריבית, מחשבון רווח השקעות, חישוב תשואה על השקעה, חישוב רווח מהשקעות, מחשבון ריבית, מחשבון החזר על השקעה, חישוב תשואה מניות, חישוב תשואה נדל״ן, מחשבון תשואה שנתית" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+    <link rel="stylesheet" href="../main.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- font -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&family=Alef:wght@400;700&family=Assistant:wght@200..800&display=swap" rel="stylesheet"> <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <nav id="header" class="fixed w-full z-10 top-0">
+
+		<div id="progress" class="h-1 z-20 top-0" style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"></div>
+
+		<div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
+
+			<div class="pl-4">
+				<a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl" href="https://percentify.co" style="font-family: Calibri, Segoe UI, sans-serif">
+					Percentify
+				</a>
+			</div>
+
+			<div class="block lg:hidden pr-4">
+				<button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-green-500 appearance-none focus:outline-none">
+					<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+						<title>Menu</title>
+						<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+					</svg>
+				</button>
+			</div>
+
+			<div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20" id="nav-content" dir="ltr">
+				<ul class="list-reset lg:flex justify-end flex-1 items-center">
+					<li class="mr-3 relative">
+						<a class="inline-block text-lg text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4 cursor-pointer">מאמרים</a>
+						<!--<div class="dropdown-content hidden absolute bg-white shadow-md mt-1">
+							<a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Article 1</a>
+							<a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Article 2</a>
+						</div>-->
+					</li>
+					<li class="mr-3 relative">
+						<a class="inline-block text-lg text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4 cursor-pointer">ארגז כלים</a>
+						<div class="dropdown-content hidden absolute bg-white shadow-md mt-1">
+							<a href="https://percentify.co/percentage-calculator" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">מחשבון אחוזים</a>
+							<a href="https://percentify.co/investment-profit-calculator" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">מחשבון תשואה</a>
+                            <a href="https://percentify.co/loan-calculator" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">מחשבון הלוואה</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+    <!-- Main Content Container -->
+    <div class="container w-full md:max-w-3xl mx-auto pt-20">
+        <div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal">
+            <h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">מחשבון תשואה</h1>
+            <p class="py-3">כלי זה מאפשר לכם לחשב את רווחי ההשקעות שלכם בקלות ומהירות.</p>
+			<p class="py-0.5">תשואה שנתית ממוצעת (היסטורית) לפי מכשיר השקעה:</p>
+			<p class="py-0.5">• מניות: 8-10%</p>
+			<p class="py-0.5">• אג״ח: 3-5%</p>
+			<p class="py-0.5">• נדל״ן (עליית ערך + הכנסה משכירות): 5-10%</p>
+			<p class="py-0.5">• קריפטו: רכבת הרים</p>
+
+            <!-- Investment Profit Calculator -->
+            <div class="mt-8">
+                <div class="w-full md:w-3/4 bg-white shadow-md rounded-lg p-6 mb-6">
+                    <div class="mb-4">
+                        <label for="initialInvestment" class="block text-gray-700 font-bold mb-2">השקעה ראשונית</label>
+                        <input type="number" id="initialInvestment" placeholder="סכום ההשקעה הראשונית" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div class="mb-4">
+                        <label for="returnRate" class="block text-gray-700 font-bold mb-2">תשואה שנתית (באחוזים)</label>
+                        <input type="number" id="returnRate" placeholder="תשואה שנתית" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div class="mb-4">
+                        <label for="investmentDuration" class="block text-gray-700 font-bold mb-2">משך ההשקעה (בשנים)</label>
+                        <input type="number" id="investmentDuration" placeholder="משך ההשקעה בשנים" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div class="mb-4">
+                        <label for="monthlyAddition" class="block text-gray-700 font-bold mb-2">הפקדות חודשיות</label>
+                        <input type="number" id="monthlyAddition" placeholder="כמה כסף תוסיף כל חודש" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <button id="calculateInvestmentProfit" class="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">חשב רווח</button>
+                </div>
+                    <canvas id="investmentGraph" class="bg-white p-4"></canvas>
+                    <div class="text-center mt-4">
+                        <p id="initialInvestmentResult" class="mt-1"></p>
+                        <p id="totalInvestmentResult" class="mt-1"></p>
+						<p id="profitsResult" class="mt-1"></p>
+						<p id="cumulativeReturnResult" class="mt-1"></p>
+						<p id="finalValueResult" class="mt-2"></p>
+                    </div>
+                </div>
+
+            <!-- Additional content like tips, FAQ, etc., similar to the percentage calculator page -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-400 shadow">
+		<div class="container max-w-4xl mx-auto flex py-8">
+
+			<div class="w-full mx-auto flex flex-wrap">
+				<div class="flex w-full md:w-1/2 ">
+					<div class="px-8">
+						<h3 class="font-bold text-gray-900">אודות</h3>
+						<p class="py-4 text-gray-600 text-sm">
+							אתר זה נוצר במטרה להנגיש ידע פיננסי וכלים שימושיים לקהל הרחב, ללא עלות.
+						</p>
+					</div>
+				</div>
+
+				<div class="flex w-full md:w-1/2">
+					<div class="px-8">
+						<h3 class="font-bold text-gray-900">צרו קשר</h3>
+						<ul class="list-reset items-center text-sm pt-3">
+							<li>
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1" href="mailto:lbevalred@gmail.com">
+									<i class="fas fa-envelope"></i>   אימייל
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+    <script src="../js/progress.js"></script>
+    <script src="../js/investment-profit-calculator.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
