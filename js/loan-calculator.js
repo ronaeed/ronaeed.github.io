@@ -27,6 +27,8 @@ function calculateLoanDetails() {
         document.getElementById('monthlyPaymentResult').innerText = `תשלום חודשי: ${formatNumber(monthlyPayment)} ש"ח`;
         document.getElementById('totalInterestPaidResult').innerText = `סך הריבית המשולמת: ${formatNumber(totalInterestPaid)} ש"ח`;
         document.getElementById('totalPaymentResult').innerText = `סכום כולל לתשלום: ${formatNumber(totalPayment)} ש"ח`;
+
+        updatePieChart([totalInterestPaid, principal]);
     } else {
         alert('יש לוודא שכל הערכים הוזנו כהלכה, וששיעור הריבית גבוה מ-0.');
     }
@@ -34,4 +36,28 @@ function calculateLoanDetails() {
 
 function formatNumber(num) {
     return num.toLocaleString('en-US', { maximumFractionDigits: 2 });
+}
+
+function updatePieChart(data) {
+    const ctx = document.getElementById('loanPieChart').getContext('2d');
+
+    if (window.loanPieChartInstance) {
+        window.loanPieChartInstance.destroy();
+    }
+
+    window.loanPieChartInstance = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['סך הריבית המשולמת', 'סכום ההלוואה'],
+            datasets: [{
+                data: data,
+                backgroundColor: ['#FF6384', '#36A2EB'],
+                hoverBackgroundColor: ['#FF6384', '#36A2EB']
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+        }
+    });
 }

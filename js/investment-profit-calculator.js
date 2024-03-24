@@ -3,6 +3,12 @@ let investmentChart = null; // Holds the chart instance
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('calculateInvestmentProfit').addEventListener('click', calculateAndDisplayResults);
 
+    // Add input formatting event listeners
+    const formatInputs = document.querySelectorAll('#initialInvestment, #monthlyAddition');
+    formatInputs.forEach(input => {
+        input.addEventListener('input', formatInputWithCommas);
+    });
+
     // Trigger button click when Enter is pressed in any input field
     const inputs = document.querySelectorAll('input');
     inputs.forEach(input => {
@@ -82,4 +88,12 @@ function displayResults(initialInvestment, totalMonthlyInvestments, finalValue, 
 // Helper function to format numbers to 2 decimal places and add commas
 function formatNumber(num) {
     return Number(parseFloat(num).toFixed(2)).toLocaleString('en-US');
+}
+
+function formatInputWithCommas(event) {
+    // Remove non-numeric characters except for commas
+    let value = event.target.value.replace(/[^0-9,]/g, '');
+    // Remove all commas, then format number with commas
+    value = value.replace(/,/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    event.target.value = value;
 }

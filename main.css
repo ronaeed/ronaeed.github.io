@@ -604,3 +604,37 @@ li:hover .dropdown-content {
     opacity: 1;
     visibility: visible;
 }
+.slider {
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 8px; /* Specified height */
+  background: #4dc0b5; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (cross-browser) */
+  transition: opacity .2s; /* 0.2 seconds transition on hover */
+}
+
+/* Mouse-over effect */
+.slider:hover {
+  opacity: 1; /* Fully opaque on hover */
+}
+
+/* The slider handle (thumb) for WebKit browsers */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Width of the handle */
+  height: 25px; /* Height of the handle */
+  background: #4dc0b5; /* Custom background color */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%; /* Make it a circle */
+}
+
+/* The slider handle (thumb) for Mozilla browsers */
+.slider::-moz-range-thumb {
+  width: 25px; /* Width of the handle */
+  height: 25px; /* Height of the handle */
+  background: #4dc0b5; /* Custom background color */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%; /* Make it a circle */
+}
