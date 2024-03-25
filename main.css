@@ -604,3 +604,8 @@ li:hover .dropdown-content {
     opacity: 1;
     visibility: visible;
 }
+
+blockquote {
+  border-color: #4dc0b5 !important;
+}
+
