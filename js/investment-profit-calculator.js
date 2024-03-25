@@ -53,7 +53,11 @@ function calculateAndDisplayResults() {
 }
 
 function displayGraph(labels, data) {
-    const ctx = document.getElementById('investmentGraph').getContext('2d');
+    const canvas = document.getElementById('investmentGraph');
+    const ctx = canvas.getContext('2d');
+
+    // Make the canvas visible
+    canvas.style.display = 'block';
 
     // Destroy the existing chart if it exists
     if (investmentChart) {

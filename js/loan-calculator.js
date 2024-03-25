@@ -28,6 +28,7 @@ function calculateLoanDetails() {
         document.getElementById('totalInterestPaidResult').innerText = `סך הריבית המשולמת: ${formatNumber(totalInterestPaid)} ש"ח`;
         document.getElementById('totalPaymentResult').innerText = `סכום כולל לתשלום: ${formatNumber(totalPayment)} ש"ח`;
 
+        document.getElementById('loanPieChart').style.display = 'block';
         updatePieChart([totalInterestPaid, principal]);
     } else {
         alert('יש לוודא שכל הערכים הוזנו כהלכה, וששיעור הריבית גבוה מ-0.');
