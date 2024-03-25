@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Handling Enter key press to trigger calculation
-    document.querySelectorAll('#mortgageAmount, #interestRate, #mortgageTerm, #ownCapital').forEach(input => {
+    document.querySelectorAll('#mortgageAmount, #interestRate, #mortgageTerm, #ownCapital, #maximumPropertyCost').forEach(input => {
         input.addEventListener('keypress', function(event) {
             if (event.key === "Enter") {
                 event.preventDefault();
@@ -53,6 +53,7 @@ function calculateMortgageDetails() {
         document.getElementById('totalInterestPaidResult').innerText = `סך הריבית המשולמת: ${formatNumber(totalInterestPaid)} ש"ח`;
         document.getElementById('totalPaymentResult').innerText = `סכום כולל לתשלום: ${formatNumber(totalPayment)} ש"ח`;
 
+        document.getElementById('mortgagePieChart').style.display = 'block';
         updatePieChart([totalInterestPaid, principal]);
     } else {
         alert('יש לוודא שכל הערכים הוזנו כהלכה, וששיעור הריבית גבוה מ-0.');
