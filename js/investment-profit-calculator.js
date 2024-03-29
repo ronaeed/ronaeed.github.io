@@ -70,7 +70,7 @@ function displayGraph(labels, data) {
         data: {
             labels: labels,
             datasets: [{
-                label: 'ערך ההשקעה לאורך זמן',
+                label: 'סכום מצטבר לאורך זמן',
                 backgroundColor: 'rgb(75, 192, 192)',
                 borderColor: 'rgb(75, 192, 192)',
                 data: data,

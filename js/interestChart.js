@@ -26,7 +26,7 @@ const interestChart = new Chart(ctx, {
             borderWidth: 1,
             fill: 'origin', // Fill the area under the line
         }, {
-            label: 'ללא ריבית דריבית (ריבית פשוטה)',
+            label: 'ללא ריבית דריבית',
             data: simpleInterestData,
             backgroundColor: 'rgba(255, 159, 64, 0.5)',
             borderColor: 'rgba(255, 159, 64, 1)',
