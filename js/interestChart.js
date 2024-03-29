@@ -2,7 +2,7 @@ const principal = 100000; // Initial amount
 const annualRate = 8; // Annual interest rate
 const years = 40; // Time period in years
 
-const labels = Array.from({length: years + 1}, (_, i) => i); // Years 0 to 20
+const labels = Array.from({length: years + 1}, (_, i) => i === 0 ? "התחלה" : `שנה ${i}`);
 const compoundInterestData = [principal];
 const simpleInterestData = [principal];
 
