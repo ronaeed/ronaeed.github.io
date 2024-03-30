@@ -95,59 +95,9 @@
     <div class="container w-full md:max-w-3xl mx-auto pt-20">
         <div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal">
             <h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">מחשבון תשואה</h1>
-            <p class="py-3">מחשבון התשואה מאפשר לכם לחשב בקלות את רווחי ההשקעות שלכם לאורך זמן, כולל ריבית דריבית.</p>
-			<table class="min-w-full leading-normal">
-			  <thead>
-				<tr class="border-b-2 border-gray-200 bg-gray-100">
-				  <th class="px-5 py-2.5 text-right text-sm font-semibold text-gray-600 uppercase tracking-wider">
-					מכשיר השקעה
-				  </th>
-				  <th class="px-5 py-2.5 text-right text-sm font-semibold text-gray-600 uppercase tracking-wider">
-					תשואה שנתית ממוצעת
-				  </th>
-				</tr>
-			  </thead>
-			  <tbody>
-				<tr class="border-b border-gray-200">
-				  <td class="px-5 py-2.5 text-base text-gray-900">
-					מניות
-				  </td>
-				  <td class="px-5 py-2.5 text-base text-gray-900">
-					8-10%
-				  </td>
-				</tr>
-				<tr class="border-b border-gray-200 bg-gray-50">
-				  <td class="px-5 py-2.5 text-base text-gray-900">
-					אג"ח
-				  </td>
-				  <td class="px-5 py-2.5 text-base text-gray-900">
-					3-5%
-				  </td>
-				</tr>
-				<tr class="border-b border-gray-200">
-				  <td class="px-5 py-2.5 text-base text-gray-900">
-					נדל"ן (עליית ערך)
-				  </td>
-				  <td class="px-5 py-2.5 text-base text-gray-900">
-					5-6%
-				  </td>
-				</tr>
-			  <tr class="border-b border-gray-200 bg-gray-50">
-				  <td class="px-5 py-2.5 text-base text-gray-900">
-					נדל״ן (שכירות)
-				  </td>
-				  <td class="px-5 py-2.5 text-base text-gray-900">
-					2-3%
-				  </td>
-				</tr>
-			  </tbody>
-			</table>
-			<div class="mt-2 text-sm text-gray-600 text-right">
-			  הערה: התשואות המצוינות הינן היסטוריות ואינן מבטיחות תשואות עתידיות.
-			</div>
+            <p class="py-0">מחשבון התשואה מאפשר לכם לחשב בקלות את רווחי ההשקעות שלכם לאורך זמן, כולל ריבית דריבית.</p>
 
             <!-- Investment Profit Calculator -->
-			<h2 class="text-2xl font-bold text-gray-900 mb-4"><br>המחשבון</h2>
             <div class="mt-8">
                 <div class="w-full md:w-3/4 bg-white shadow-md rounded-lg p-6 mb-6">
                     <div class="mb-4">
@@ -178,6 +128,60 @@
                     </div>
                 </div>
 
+			<!-- ROI Table -->
+			<div>
+				<h2 class="text-xl font-bold text-gray-900 mb-4"><br>תשואות ממוצעות</h2>
+				<table class="min-w-full leading-normal">
+				  <thead>
+					<tr class="border-b-2 border-gray-200 bg-gray-100">
+					  <th class="px-5 py-2.5 text-right text-sm font-semibold text-gray-600 uppercase tracking-wider">
+						מכשיר השקעה
+					  </th>
+					  <th class="px-5 py-2.5 text-right text-sm font-semibold text-gray-600 uppercase tracking-wider">
+						תשואה שנתית ממוצעת
+					  </th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr class="border-b border-gray-200">
+					  <td class="px-5 py-2.5 text-base text-gray-900">
+						מניות
+					  </td>
+					  <td class="px-5 py-2.5 text-base text-gray-900">
+						8-10%
+					  </td>
+					</tr>
+					<tr class="border-b border-gray-200 bg-gray-50">
+					  <td class="px-5 py-2.5 text-base text-gray-900">
+						אג"ח
+					  </td>
+					  <td class="px-5 py-2.5 text-base text-gray-900">
+						3-5%
+					  </td>
+					</tr>
+					<tr class="border-b border-gray-200">
+					  <td class="px-5 py-2.5 text-base text-gray-900">
+						נדל"ן (עליית ערך)
+					  </td>
+					  <td class="px-5 py-2.5 text-base text-gray-900">
+						5-6%
+					  </td>
+					</tr>
+				  <tr class="border-b border-gray-200 bg-gray-50">
+					  <td class="px-5 py-2.5 text-base text-gray-900">
+						נדל״ן (שכירות)
+					  </td>
+					  <td class="px-5 py-2.5 text-base text-gray-900">
+						2-3%
+					  </td>
+					</tr>
+				  </tbody>
+				</table>
+				<div class="mt-2 text-sm text-gray-600 text-right">
+				  הערה: התשואות המצוינות הינן היסטוריות ואינן מבטיחות תשואות עתידיות.
+				</div>
+			</div>
+
             <!-- FAQ -->
 			<div>
 				<div>
@@ -186,7 +190,7 @@
 					<p class="py-0">למשל, אם אנחנו משקיעים 100 ש״ח ועשינו השנה תשואה של 10%, הרווחנו 10 ש״ח, כלומר יש לנו 110 ש״ח. כשנרוויח 10% בשנה הבאה, ה-10% שנרוויח יהיו שווים כבר 11 שקל, ולא 10 שקל כמו בשנה שעברה. </p>
 					<p class="py-3">נשמע לא דרמטי, אבל לאורך זמן, ריבית דריבית יכולה להיות ההבדל הקטן שיעשה אתכם מיליונרים. נדגים:</p>
 
-					<p class="py-1"> בגרף שלפניכם שני תרחישים: (1) השקעה עם ריבית דריבית, כלומר אין משיכה של הרווחים והם מושקעים חזרה, לעומת (2) השקעה עם ״ריבית פשוטה״, כלומר הרווחים מההשקעה אינם מושקעים חזרה. בשני התרחישים התחלנו עם אותו הסכום (100,000) ואנחנו נהנים מאותה תשואה שנתית (8%). </p>
+					<p class="py-1"> בגרף שלפניכם שני תרחישים: (1) השקעה עם ריבית דריבית, כלומר אין משיכה של הרווחים והם ממשיכים להיות מושקעים, לעומת (2) השקעה עם ״ריבית פשוטה״, כלומר הרווחים מההשקעה אינם מושקעים חזרה. בשני התרחישים התחלנו עם אותו הסכום (100,000) ואנחנו נהנים מאותה תשואה שנתית (8%). </p>
 				</div>
 
 				<canvas id="interestChart"></canvas>
