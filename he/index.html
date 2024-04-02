@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>מחשבון אחוזים אונליין | חישוב אחוזים במהירות ובקלות</title>
+    <meta name="description" content="חישוב אחוזים במחשבון מהיר ופשוט, מעולה לביצוע תרגילים, חישוב ריביות, הפרשות לפנסיה, דמי ניהול ועוד. נוח, מהיר ומדויק." />
+    <meta name="keywords" content="מחשבון אחוזים, איך לחשב אחוזים, חישוב אחוזים אונליין, מחשבון חישוב אחוזים, המרת אחוזים, חישוב הפרש אחוזים" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+	<link rel="stylesheet" href="../main.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- font -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&family=Alef:wght@400;700&family=Assistant:wght@200..800&display=swap" rel="stylesheet"> <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+  </head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+	<nav id="header" class="fixed w-full z-10 top-0">
+
+		<div id="progress" class="h-1 z-20 top-0" style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"></div>
+
+		<div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
+
+			<div class="pl-4">
+				<a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl" href="https://percentify.co" style="font-family: Calibri, Segoe UI, sans-serif">
+					Percentify
+				</a>
+			</div>
+
+			<div class="block lg:hidden pr-4">
+				<button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-green-500 appearance-none focus:outline-none">
+					<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+						<title>Menu</title>
+						<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+					</svg>
+				</button>
+			</div>
+
+			<div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20" id="nav-content" dir="ltr">
+				<ul class="list-reset lg:flex justify-end flex-1 items-center">
+					<li class="mr-3 relative">
+						<a class="inline-block text-lg text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4 cursor-pointer">מאמרים</a>
+						<!--<div class="dropdown-content hidden absolute bg-white shadow-md mt-1">
+							<a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Article 1</a>
+							<a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Article 2</a>
+						</div>-->
+					</li>
+					<li class="mr-3 relative">
+						<a class="inline-block text-lg text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4 cursor-pointer">ארגז כלים</a>
+						<div class="dropdown-content hidden absolute bg-white shadow-md mt-1">
+							<a href="https://percentify.co/percentage-calculator" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">מחשבון אחוזים</a>
+							<a href="https://percentify.co/investment-profit-calculator" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">מחשבון תשואה</a>
+                            <a href="https://percentify.co/loan-calculator" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">מחשבון הלוואה</a>
+                            <a href="https://percentify.co/mortgage-calculator" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">מחשבון משכנתא</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!--Container-->
+	<div class="container w-full md:max-w-3xl mx-auto pt-20">
+		<div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal">
+			<!--Title-->
+			<div class="font-sans">
+				<!--<p class="text-base md:text-sm text-green-500 font-bold">&lt; <a href="#" class="text-base md:text-sm text-green-500 font-bold no-underline hover:underline">BACK TO BLOG</a></p>-->
+						<h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">מחשבון אחוזים</h1>
+                        <a href="https://wa.me/?text=%D7%9E%D7%97%D7%A9%D7%91%D7%95%D7%9F%20%D7%90%D7%97%D7%95%D7%96%D7%99%D7%9D%20%D7%A7%D7%9C%20%D7%9C%D7%A9%D7%99%D7%9E%D7%95%D7%A9%3A%20https%3A%2F%2Fpercentify.co%2Fpercentage-calculator" target="_blank" class="whatsapp-share-button">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+			</div>
+
+			<!--Post Content-->
+
+			<!--Lead Para-->
+			<p class="py-2 text-lg">
+				 מחשבון זה הוא כלי אונליין חינמי שמפשט עבורכם תרגילי אחוזים.
+			<br>
+			ניתן להשתמש בו לצורך חישוב דמי ניהול, ריבית הלוואה, הפרשות לפנסיה, טיפ במסעדה ועוד. <br>שימוש מהנה ומועיל!
+			</p>
+
+			<div class="mt-8">
+
+                <!-- Percentage of a Total -->
+                <div class="w-full md:w-3/4 bg-white shadow-md rounded-lg p-6 mb-6">
+                    <div class="mb-4">
+                        <label for="percentOfTotal" class="block text-gray-700 font-bold mb-2">כמה זה</label>
+						<div class="flex items-center">
+							<label class="mr-2">%</label>
+							<input type="text" id="percentOfTotal" placeholder="אחוז" inputmode="decimal" class="shadow appearance-none border rounded flex-grow py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+						</div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="totalForPercentage" class="block text-gray-700 font-bold mb-2">מתוך</label>
+                        <input style="width: 95%;" type="text" id="totalForPercentage" placeholder="סכום" inputmode="decimal" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <button onclick="calculatePercentageOfTotal()" class="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">חישוב</button>
+                    <p id="resultPercentageOfTotal" class="mt-4"></p>
+                </div>
+
+                <!-- Amount as a Percentage of Total -->
+                <div class="w-full md:w-3/4 bg-white shadow-md rounded-lg p-6 mb-6">
+                    <div class="mb-4">
+                        <label for="amount" class="block text-gray-700 font-bold mb-2">איזה אחוז זה</label>
+                        <input style="width: 95%;" type="text" id="amount" placeholder="סכום" inputmode="decimal" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div class="mb-4">
+                        <label for="totalAmount" class="block text-gray-700 font-bold mb-2">מתוך</label>
+                        <input style="width: 95%;" type="text" id="totalAmount" placeholder="סכום" inputmode="decimal" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <button onclick="calculateAmountAsPercentage()" class="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">חישוב</button>
+                    <p id="resultAmountAsPercentage" class="mt-4"></p>
+                </div>
+
+				<!-- Finding the Total from a Percentage -->
+				<div class="w-full md:w-3/4 bg-white shadow-md rounded-lg p-6 mb-6">
+					<div class="mb-4">
+						<label for="partialAmount" class="block text-gray-700 font-bold mb-2">אם</label>
+						<input type="text" id="partialAmount" placeholder="סכום" inputmode="decimal" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+					</div>
+					<div class="mb-4 flex items-center">
+						<label for="percentageOfTotal" class="text-gray-700 font-bold mb-0 mr-2" style="margin-left: 2%">שווה</label>
+						<div class="flex items-center flex-grow">
+							<label class="ml-2">%</label>
+							<input type="text" id="percentageOfTotal" placeholder="אחוז" inputmode="decimal" class="shadow appearance-none border rounded flex-grow py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+							<label class="ml-2">,</label>
+						</div>
+					</div>
+					<label class="text-gray-700 font-bold mb-0 ml-4">כמה זה 100%?<br></label>
+					<button onclick="calculateTotalFromPercentage()" class="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">חישוב</button>
+					<p id="resultTotalFromPercentage" class="mt-4"></p>
+				</div>
+
+            </div>
+			<div class="text-base">
+				<p><strong>טיפ:</strong> לחצו Tab כדי לעבור לשדה הבא, או Shift+Tab בשביל לחזור לשדה הקודם. <br>לחצו על Enter כדי לחשב את התוצאה.</p>
+			</div>
+
+			<!-- FAQ -->
+			<div>
+				<div>
+					<h2 class="text-2xl font-bold text-gray-900 mb-1"><br>מה זה אחוז?</h2>
+					<p class="py-0">אחוז הוא יחידת מידה מתמטית המשמשת להצגת יחס או חלק משלם, והוא מוגדר כאחד ממאה. השימוש באחוזים מאפשר השוואה נוחה בין קבוצות שונות בגודלן, מכיוון שהוא מבטא יחסים באופן אחיד וקבוע, ללא תלות בגודל הקבוצה.</p>
+				</div>
+
+				<div>
+					<h2 class="text-2xl font-bold text-gray-900 mb-1"><br>איך מחשבים אחוזים?</h2>
+					<p class="py-0"><p>לחישוב אחוזים יש נוסחה פשוטה:</p></p>
+					<p class="py-2"><p>1. מחלקים את החלק שרוצים למצוא את האחוז שלו במספר השלם.</p></p>
+					<p class="py-0"><p>2. כופלים את התוצאה ב-100.</p></p>
+					<p class="py-2"><p>לדוגמה, אם בכיתה יש 40 תלמידים ו-10 מהם חוגגים יום הולדת בחודש ינואר, אז האחוז של התלמידים שחוגגים יום הולדת בינואר הוא 25%, לפי החישוב הבא:</p></p>
+					<p class="py-2"><mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" display="true" tabindex="-1" ctxtmenu_counter="0" style="font-size: 121.1%; position: relative;"><mjx-math display="true" class="MJX-TEX" aria-hidden="true" style="margin-left: 0px; margin-right: 0px;"><mjx-mrow><mjx-mo class="mjx-s3"><mjx-c class="mjx-c28 TEX-S3"></mjx-c></mjx-mo><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mn class="mjx-n"><mjx-c class="mjx-c34"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac><mjx-mo class="mjx-s3"><mjx-c class="mjx-c29 TEX-S3"></mjx-c></mjx-mo></mjx-mrow><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="3"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c35"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="3"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c35"></mjx-c></mjx-mn><mjx-mi class="mjx-n"><mjx-c class="mjx-c25"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow data-mjx-texclass="INNER"><mo data-mjx-texclass="OPEN">(</mo><mfrac><mn>10</mn><mn>40</mn></mfrac><mo data-mjx-texclass="CLOSE">)</mo></mrow><mo>×</mo><mn>100</mn><mo>=</mo><mn>0.25</mn><mo>×</mo><mn>100</mn><mo>=</mo><mn>25</mn><mi mathvariant="normal">%</mi></math></mjx-assistive-mml></mjx-container></p>
+				</div>
+			</div>
+			<br>
+			<!-- /FAQ -->
+
+			<!--/ Post Content-->
+
+		</div>
+
+		<!--Tags
+		<div class="text-base md:text-sm text-gray-500 px-4 py-6">
+			Tags: <a href="#" class="text-base md:text-sm text-green-500 no-underline hover:underline">Link</a> . <a href="#" class="text-base md:text-sm text-green-500 no-underline hover:underline">Link</a>
+		</div>
+
+		 /Tags -->
+
+		<!--Divider-->
+		<hr class="border-b-2 border-gray-400 mb-8 mx-4">
+
+
+		<!--Subscribe-->
+		<div class="container px-4">
+			<div class="font-sans bg-gradient-to-b from-green-100 to-gray-100 rounded-lg shadow-xl p-4 text-center">
+				<h2 class="font-bold break-normal text-xl md:text-3xl">רוצים לשמוע עוד?</h2>
+				<h3 class="font-bold break-normal text-gray-600 text-sm md:text-base">מבטיחים לשלוח כתבות, כלים ומידע מעניינים ומועילים!</h3>
+				<div class="w-full text-center pt-4">
+					<form action="#">
+						<div class="max-w-xl mx-auto p-1 pr-0 flex flex-wrap items-center">
+							<input type="email" placeholder="youremail@example.com" class="flex-1 mt-4 appearance-none border border-gray-400 rounded shadow-md p-3 text-gray-600 mr-2 focus:outline-none">
+							<button type="submit" class="flex-1 mt-4 block md:inline-block appearance-none bg-green-500 text-white text-base font-semibold tracking-wider uppercase py-4 rounded shadow hover:bg-gray-800">הרשמה</button>
+						</div>
+					</form>
+				</div>
+				<div id="success-message" class="hidden text-green-600 mt-4">כתובתך התווספה בהצלחה!</div>
+			</div>
+		</div>
+		<!-- /Subscribe-->
+
+		<!--Divider-->
+		<hr class="border-b-2 border-gray-400 mb-8 mx-4">
+
+
+	</div>
+	<!--/container-->
+
+	<!-- footer -->
+	<footer class="bg-white border-t border-gray-400 shadow">
+		<div class="container max-w-4xl mx-auto flex py-8">
+
+			<div class="w-full mx-auto flex flex-wrap">
+				<div class="flex w-full md:w-1/2 ">
+					<div class="px-8">
+						<h3 class="font-bold text-gray-900">אודות</h3>
+						<p class="py-4 text-gray-600 text-sm">
+							אתר זה נוצר במטרה להנגיש ידע פיננסי וכלים שימושיים לקהל הרחב, ללא עלות.
+						</p>
+					</div>
+				</div>
+
+				<div class="flex w-full md:w-1/2">
+					<div class="px-8">
+						<h3 class="font-bold text-gray-900">צרו קשר</h3>
+						<ul class="list-reset items-center text-sm pt-3">
+							<li>
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1" href="mailto:lbevalred@gmail.com">
+									<i class="fas fa-envelope"></i>   אימייל
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="../js/progress.js"></script>
+    <script src="../js/percentage-calculator.js"></script>
+
+	<script src="../js/subscription.js"></script> <!-- global-setting -->
+
+</body>
+
+</html>
